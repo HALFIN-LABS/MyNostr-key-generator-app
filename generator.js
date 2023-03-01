@@ -37,7 +37,7 @@ onmessage = async (e) => {
 
     if(isMatched(prefix, npub, isPrefix)) {
       if(wordOfInterest !== "") {
-        postMessage({wordOfInterest, npub, privatekey});
+        postMessage({wordOfInterest, npub, nsec});
         wordOfInterest = "";
       } else {
         let end = Date.now();

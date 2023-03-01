@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+    <script src="snek.js"></script>
   </head>
   <body>
+
+    <!-- The actual snackbar -->
+    <div id="snackbar">Generating keys</div>
+
     <h1>MyNstr</h1>
     <h4>Generate Nostr keys</h4>
     <center><p>
@@ -60,7 +65,7 @@
 
         <div class="input-group shadow">
           <input type="text" class="form-control form-control-lg" placeholder="prefix" id="prefix" data-inputmask-mask="[9-]AAA-999">
-          <button class="browse btn btn-primary" type="button" onclick="generate(); snek()">create</button>
+          <button class="browse btn btn-primary" type="button" onclick="snek(); generate()">create</button>
         </div>
       </div>
     </div>
@@ -129,6 +134,5 @@
       <a href="https://getalby.com/p/imtiaan" class="donate-link" target="_blank">⚡️ImTiaan@getalby.com</a>
     </div>
     <script src="nostrogen.js"></script>
-    <script src="snek.js"></script>
   </body>
 </html>

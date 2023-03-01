@@ -13,9 +13,14 @@
   <body>
     <h1>MyNstr</h1>
     <h4>Generate Nostr keys</h4>
-    <p>
-      To generate a Nostr keyset, simply click on "create" and you'll generate a random pair
-      You can't use b, i, o or 1 when a
+    <p class="center-justified" style="width: max-content;">
+      - To generate a Nostr keyset, simply click on "create" and you'll generate a random pair
+      <br>
+        - - Select "Prefix" or "Suffix" and enter the characters you want in your pubic npub key.
+      <br>
+        - - You can't use b, i, o or 1 in your npub key, so be creative!
+      <br>
+        - - Check the 🎲 box to get a list of interesting npubs we generated while looking for yours.
     </p>
     <div class="nospace">
       <div class="progress">
@@ -103,15 +108,15 @@
       </div>
     </div>
     <div id="wordsOfInterestContainer" class="container mt-4" style="display:none">
-      Interesting words we found while creating your address:
+      <p>Interesting words we found while creating your address:</p>
       <div class="row">
         <div class="col-sm-12 table-responsive small">
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">word</th>
-                <th scope="col">npub</th>
-                <th scope="col">private key</th>
+                <th scope="col" style="color: #fff;">word</th>
+                <th scope="col" style="color: #fff;">npub</th>
+                <th scope="col" style="color: #fff;">private key</th>
               </tr>
             </thead>
             <tbody id="tableOfInterest">

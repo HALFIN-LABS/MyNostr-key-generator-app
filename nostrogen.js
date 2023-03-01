@@ -26,7 +26,7 @@ function startWorker() {
       counterEl.innerHTML = e.data.counter;
     }
     if(e.data.wordOfInterest) {
-      tableOfInterestEl.innerHTML += `<tr><th>${e.data.wordOfInterest}</th><td>${e.data.npub}</td><td>${e.data.privatekey}</td></tr>`
+      tableOfInterestEl.innerHTML += `<tr><th>${e.data.wordOfInterest}</th><td>${e.data.npub}</td><td>${e.data.nsec}</td></tr>`
     }
     if(e.data.npub && !e.data.wordOfInterest) {
       const { npub, nsec, publickey, privatekey, time } = e.data;

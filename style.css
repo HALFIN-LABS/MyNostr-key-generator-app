@@ -94,3 +94,9 @@ p{
   color: #5a3c90;
   font-weight: 600;
 }
+
+.center-justified {
+  text-align: justify;
+  margin: 0 auto;
+  width: 30em;
+}

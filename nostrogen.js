@@ -123,25 +123,25 @@ function copy(element) {
       npubEl.select();
       npubEl.setSelectionRange(0, 99999);
       navigator.clipboard.writeText(npubEl.value);
-      alert('copied!')
+      alert('Your public (npub) has been copied.')
       break;
     case 'nsec':
       nsecEl.select();
       nsecEl.setSelectionRange(0, 99999);
       navigator.clipboard.writeText(nsecEl.value);
-      alert('copied!')
+      alert('Your private (nsec) has been copied.')
       break;
     case 'public':
       publicEl.select();
       publicEl.setSelectionRange(0, 99999);
       navigator.clipboard.writeText(publicEl.value);
-      alert('copied!')
+      alert('Your public (hex) key has been copied.')
       break;
     case 'private':
       privateEl.select();
       privateEl.setSelectionRange(0, 99999);
       navigator.clipboard.writeText(privateEl.value);
-      alert('copied!')
+      alert('Your private (hex) key has been copied.')
       break;       
   }
 }

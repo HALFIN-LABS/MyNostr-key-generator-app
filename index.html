@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+    <script src="snek.js"></script>
   </head>
   <body>
     <h1>MyNstr</h1>
@@ -31,10 +32,10 @@
       
       <div class="form-group" style="color: #fff;">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="d-flex justify-content-center justify-content-md-start pb-3">characters not allowed: b, i, o, 1</div>
+          <!-- <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center justify-content-md-start pb-3"></div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6"> -->
             <div class="d-flex justify-content-center justify-content-md-end">
               <div class="form-check mx-3 px-2">
                 <input class="form-check-input" type="radio" name="prefixRadio" id="prefixRadio" checked>
@@ -57,6 +58,9 @@
             </div>
           </div>
         </div>
+
+        <!-- The actual snackbar -->
+     <div id="snackbar">Generating keys</div>
 
         <div class="input-group shadow">
           <input type="text" class="form-control form-control-lg" placeholder="prefix" id="prefix" data-inputmask-mask="[9-]AAA-999">
@@ -129,6 +133,5 @@
       <a href="https://getalby.com/p/imtiaan" class="donate-link" target="_blank">⚡️ImTiaan@getalby.com</a>
     </div>
     <script src="nostrogen.js"></script>
-    <script src="snek.js"></script>
   </body>
 </html>

@@ -3886,10 +3886,13 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
   white-space: nowrap;
+  align-items: center;
 }
 .navbar-nav {
   display: flex;
@@ -7217,6 +7220,7 @@ textarea.form-control-lg {
 
 .bg-light {
   background-color: #f8f9fa !important;
+  opacity: 0.75;
 }
 
 .bg-dark {

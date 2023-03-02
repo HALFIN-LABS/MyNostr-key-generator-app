@@ -12,10 +12,6 @@
     <script src="snek.js"></script>
   </head>
   <body>
-
-    <!-- The actual snackbar -->
-    <div id="snackbar">Generating keys</div>
-
     <h1>MyNstr</h1>
     <h4>Generate Nostr keys</h4>
     <center><p>
@@ -36,19 +32,19 @@
       
       <div class="form-group" style="color: #fff;">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="d-flex justify-content-center justify-content-md-start pb-3">characters not allowed: b, i, o, 1</div>
+          <!-- <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center justify-content-md-start pb-3"></div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6"> -->
             <div class="d-flex justify-content-center justify-content-md-end">
               <div class="form-check mx-3 px-2">
-                <input class="form-check-input" type="radio" name="prefixRadio" id="prefixRadio" checked>
+                <input class="form-check-input" type="radio" name="prefixRadio" id="prefixRadio" name="prefix" checked>
                 <label class="form-check-label" for="prefixRadio">
                   Prefix
                 </label>
               </div>
               <div class="form-check pb-3 px-3">
-                <input class="form-check-input" type="radio" name="suffixRadio" id="suffixRadio">
+                <input class="form-check-input" type="radio" name="suffixRadio" id="suffixRadio" name="suffix">
                 <label class="form-check-label" for="suffixRadio">
                   Suffix
                 </label>
@@ -62,6 +58,9 @@
             </div>
           </div>
         </div>
+
+        <!-- The actual snackbar -->
+        <div id="snackbar"></div>
 
         <div class="input-group shadow">
           <input type="text" class="form-control form-control-lg" placeholder="prefix" id="prefix" data-inputmask-mask="[9-]AAA-999">
@@ -131,7 +130,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center mt-4">
-      <a href="https://getalby.com/p/imtiaan" class="donate-link" target="_blank">⚡️ImTiaan@getalby.com</a>
+      <a href="https://getalby.com/p/imtiaan" class="donate-link" target="_blank">⚡️ tip on lightning ⚡️</a>
     </div>
     <script src="nostrogen.js"></script>
   </body>

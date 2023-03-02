@@ -3886,10 +3886,14 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
   text-decoration: none;
   white-space: nowrap;
+  align-items: center;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 .navbar-nav {
   display: flex;
@@ -3907,8 +3911,8 @@ textarea.form-control-lg {
 }
 
 .navbar-text {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar-collapse {
@@ -4081,6 +4085,9 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+}
+.navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
@@ -7217,6 +7224,7 @@ textarea.form-control-lg {
 
 .bg-light {
   background-color: #f8f9fa !important;
+  opacity: 0.75;
 }
 
 .bg-dark {

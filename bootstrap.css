@@ -3913,6 +3913,7 @@ textarea.form-control-lg {
 .navbar-text {
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 0.6em;
 }
 
 .navbar-collapse {
